@@ -1,5 +1,5 @@
 # Morphe Module and APK
-[![CI](https://github.com/rayshabh/Morphe-AutoBuilds/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/elohim-etz/morphe-builder/actions/workflows/ci.yml)
+[![CI](https://github.com/rayshabh/Morphe-AutoBuilds/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/rayshabh/Morphe-AutoBuilds/actions/workflows/ci.yml)
 
 Extensive Morphe Builder
 
