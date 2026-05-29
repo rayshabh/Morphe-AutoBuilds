@@ -15,7 +15,7 @@ elif [ "$ARCH" = "x86" ]; then
 elif [ "$ARCH" = "x64" ]; then
 	ARCH_LIB=x86_64
 else abort "ERROR: unreachable: ${ARCH}"; fi
-RVPATH=/data/adb/rvelo/${MODPATH##*/}.apk
+RVPATH=/data/adb/morphe/${MODPATH##*/}.apk
 
 set_perm_recursive "$MODPATH/bin" 0 0 0755 0777
 
@@ -154,8 +154,8 @@ ui_print "* Setting Permissions"
 set_perm "$MODPATH/base.apk" 1000 1000 644 u:object_r:apk_data_file:s0
 
 ui_print "* Mounting $PKG_NAME"
-mkdir -p "/data/adb/rvelo"
-RVPATH=/data/adb/rvelo/${MODPATH##*/}.apk
+mkdir -p "/data/adb/morphe"
+RVPATH=/data/adb/morphe/${MODPATH##*/}.apk
 mv -f "$MODPATH/base.apk" "$RVPATH"
 
 if ! op=$(su -M -c mount -o bind "$RVPATH" "$BASEPATH/base.apk" 2>&1); then
@@ -190,5 +190,5 @@ fi
 rm -rf "${MODPATH:?}/bin" "$MODPATH/stock/"
 
 ui_print "* Done"
-ui_print "  by 𝙴𝙻𝙾𝙷𝙸𝙼 (github.com/elohim-etz)"
+ui_print "  by rayshabh (github.com/rayshabh)"
 ui_print " "
