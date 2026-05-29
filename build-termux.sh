@@ -41,13 +41,13 @@ if [ -d morphe-builder ] || [ -f config.toml ]; then
 		cd ..
 		cp -f morphe-builder/config.toml .
 		rm -rf morphe-builder
-		git clone https://github.com/elohim-etz/morphe-builder --recurse --depth 1
+		git clone https://github.com/rayshabh/Morphe-AutoBuilds --recurse --depth 1
 		mv -f config.toml morphe-builder/config.toml
 		cd morphe-builder
 	fi
 else
 	pr "Cloning morphe-builder."
-	git clone https://github.com/elohim-etz/morphe-builder --depth 1
+	git clone https://github.com/rayshabh/Morphe-AutoBuilds --depth 1
 	cd morphe-builder
 	sed -i '/^enabled.*/d; /^\[.*\]/a enabled = false' config.toml
 	grep -q 'morphe-builder' ~/.gitconfig 2>/dev/null ||
