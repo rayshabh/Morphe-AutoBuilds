@@ -1,6 +1,6 @@
 #!/system/bin/sh
 MODDIR=${0%/*}
-RVPATH=/data/adb/rvelo/${MODDIR##*/}.apk
+RVPATH=/data/adb/morphe/${MODDIR##*/}.apk
 . "$MODDIR/config"
 
 err() {
