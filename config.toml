@@ -10,7 +10,7 @@ cli-version = "latest"
 
 # Morphe Patches
 [YouTube]
-enabled = true
+enabled = false
 app-name = "YouTube"
 build-mode = "both"
 arch = "arm64-v8a"
@@ -22,7 +22,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
 [YouTube-Music]
-enabled = true
+enabled = false
 app-name = "YouTube-Music"
 build-mode = "both"
 arch = "arm64-v8a"
@@ -35,7 +35,7 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 # De-Vanced Patches
 [Photos]
-enabled = true
+enabled = false
 app-name = "Photos"
 build-mode = "both"
 arch = "arm64-v8a"
@@ -47,7 +47,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 
 [Amazon-Music]
-enabled = true
+enabled = false
 app-name = "Amazon-Music"
 build-mode = "both"
 arch = "arm64-v8a"
@@ -60,7 +60,7 @@ uptodown-dlurl = "https://amazon-mp3.en.uptodown.com/android"
 
 # Hoo-dles Patches
 [Amazon-Prime-Video]
-enabled = true
+enabled = false
 app-name = "Amazon-Prime-Video"
 build-mode = "both"
 arch = "arm64-v8a"
