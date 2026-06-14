@@ -2,6 +2,7 @@ enable-module-update = true
 parallel-jobs = 1
 patches-version = "latest"
 cli-version = "latest"
+cli-source = "MorpheApp/morphe-cli"
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/elohim-etz/morphe-builder/blob/main/CONFIG.md for more detailed explanations
@@ -10,40 +11,37 @@ cli-version = "latest"
 
 # Morphe Patches
 [YouTube]
-enabled = false
+enabled = true
 app-name = "YouTube"
 build-mode = "both"
 arch = "arm64-v8a"
-version = "auto"
+version = "20.47.62"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
-[YouTube-Music]
-enabled = false
-app-name = "YouTube-Music"
+[YT-Music]
+enabled = true
+app-name = "YT-Music"
 build-mode = "both"
 arch = "arm64-v8a"
 version = "auto"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 # De-Vanced Patches
 [Photos]
-enabled = false
+enabled = true
 app-name = "Photos"
 build-mode = "both"
 arch = "arm64-v8a"
 version = "auto"
 patches-source = "RookieEnough/De-Vanced"
-cli-source = "MorpheApp/morphe-cli"
 rv-brand = "De-Vanced"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 
 [Amazon-Music]
@@ -53,9 +51,8 @@ build-mode = "both"
 arch = "arm64-v8a"
 version = "auto"
 patches-source = "RookieEnough/De-Vanced"
-cli-source = "MorpheApp/morphe-cli"
 rv-brand = "De-Vanced"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-music-discover-songs/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-music-discover-songs/"
 uptodown-dlurl = "https://amazon-mp3.en.uptodown.com/android"
 
 # Hoo-dles Patches
@@ -66,19 +63,41 @@ build-mode = "both"
 arch = "arm64-v8a"
 version = "auto"
 patches-source = "hoo-dles/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Hoo-dles"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-prime-video/"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-prime-video/"
 uptodown-dlurl = "https://amazon-video.en.uptodown.com/android"
 
 # Paresh Patches
 [VN-Video-Editor]
-enabled = true
+enabled = false
 app-name = "VN-Video-Editor"
 build-mode = "both"
 arch = "arm64-v8a"
 version = "auto"
 patches-source = "Paresh-Maheshwari/paresh-patches"
-cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Paresh-Patches"
 uptodown-dlurl = "https://vn-video-editor.en.uptodown.com/android"
+
+# Crimera Patches
+[Twitter]
+enabled = true
+app-name = "Twitter"
+build-mode = "module"
+version = "11.81.0-release.0"
+include-stock = "split"
+patches-source = "crimera/piko"
+rv-brand = "Piko"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter/"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.twitter.android"
+
+# Binarymend Patches
+[Pinterest]
+enabled = true
+app-name = "Pinterest"
+build-mode = "apk"
+arch = "arm64-v8a"
+version = "auto"
+patches-source = "binarymend/morphe-patches"
+rv-brand = "binarymend"
+# apkmirror-dlurl = "https://www.apkmirror.com/apk/pinterest/"
+uptodown-dlurl = "https://pinterest.en.uptodown.com/android"
